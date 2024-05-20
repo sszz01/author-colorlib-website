@@ -9314,3 +9314,35 @@ textarea.form-control {
     -moz-box-shadow: 0 0 0 0 rgba(23, 185, 120, 0);
     -webkit-box-shadow: 0 0 0 0 rgba(23, 185, 120, 0);
     box-shadow: 0 0 0 0 rgba(23, 185, 120, 0); } }
+
+.intro {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.intro-div {
+    margin-left : -10%;
+}
+
+@media screen and (max-width: 1024px) {
+    .intro-div {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro-div {
+      margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .intro-div {
+      margin-left: 0;
+    }
+}
+
+.contact-me {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
