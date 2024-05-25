@@ -9329,6 +9329,9 @@ textarea.form-control {
     .intro-div {
         margin-left: 0;
     }
+    .beginning-img {
+      opacity: 0.3 !important;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -9340,6 +9343,9 @@ textarea.form-control {
 @media screen and (max-width: 480px) {
     .intro-div {
       margin-left: 0;
+    }
+    .beginning-img {
+      opacity: 0.3 !important;
     }
 }
 
@@ -9370,3 +9376,4 @@ textarea.form-control {
   font-size: 20px;
   line-height: 1;
 }
+
