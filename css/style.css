@@ -9377,3 +9377,229 @@ textarea.form-control {
   line-height: 1;
 }
 
+.intro-div {
+  margin: 0 auto;
+  padding: 7% 20%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.intro-div .subheading {
+  display: block;
+  font-size: 24px;
+  color: #17b978;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.intro-div .intro {
+  font-size: 42px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.intro-div .intro p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.intro-div a.btn-primary {
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  background-color: #17b978;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.intro-div a.btn-primary:hover {
+  background-color: #0d8c61;
+}
+
+#author-section {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+
+#author-section .img-about {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#author-section .img-about .img {
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+#author-section .py-md-5 {
+  padding: 20px;
+}
+
+#author-section h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  color: #333;
+}
+
+#author-section p {
+  font-size: 18px;
+  color: #555;
+}
+
+#author-section .subheading {
+  font-size: 18px;
+  color: #17b978;
+  display: block;
+  margin-bottom: 30px;
+}
+
+#author-section ul.credentials-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 30px;
+}
+
+#author-section ul.credentials-list li {
+  margin-bottom: 15px; /* Space between list items */
+  padding: 15px; /* Padding around list items */
+  background-color: #fff; /* White background */
+  border-left: 6px solid #17b978; /* Green left border */
+  border-radius: 6px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+#author-section ul.credentials-list li strong {
+  font-size: 18px; /* Font size for strong elements */
+  color: #333; /* Dark text color */
+  display: block; /* Block-level display for better spacing */
+  margin-bottom: 5px; /* Space below each strong element */
+}
+
+#author-section ul.credentials-list li span {
+  font-size: 16px; /* Font size for description */
+  color: #666; /* Lighter text color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #author-section .img-about {
+      height: 300px; /* Reduced image height on smaller screens */
+  }
+  
+  #author-section .py-md-5 {
+      padding: 15px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.stop-scrolling {
+  overflow: hidden;
+}
+
+.quotes-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.quote {
+    width: 30%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    font-family: 'Dancing Script', cursive;
+    pointer-events: auto;
+    margin: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.left-quote {
+    position: absolute;
+    left: 10px;
+}
+
+.right-quote {
+    position: absolute;
+    right: 10px;
+}
+
+.top-quote {
+    top: 25%;
+}
+
+.bottom-quote {
+    bottom: 25%;
+}
+
+.author {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #333;
+}
+@media (max-width: 768px) {
+    .quote {
+        width: 40%;
+        font-size: 16px;
+    }
+
+    .top-quote {
+        top: 15%;
+    }
+
+    .bottom-quote {
+        bottom: 15%;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .top-quote {
+        top: 10%;
+    }
+
+    .bottom-quote {
+        bottom: 10%;
+    }
+}
+.quote.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
