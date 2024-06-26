@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Roger S. Peterson Welcomes You : Sacramento Writers & Tutors</title>
+    <title>Roger S. Peterson : Professional Ghost and Business Writer</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
     <link
       rel="stylesheet"
@@ -85,7 +86,44 @@
         </div>
       </div>
     </nav>
+    
+    <section class="intro-section" style="font-family: 'Merriweather', serif !important; font-weight: 900;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-12 intro-item">Business Writer</div>
+          <div class="col-md-12 col-sm-12 col-12 intro-item">Editor</div>
+          <div class="col-md-12 col-sm-12 col-12 intro-item">Ghostwriter</div>
+          <div class="col-md-12 col-sm-12 col-12 intro-item">Critical Thinking Trainer</div>
+        </div>
+      </div>
+    </section> 
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const introItems = document.querySelectorAll(".intro-item");
+    
+        introItems.forEach(item => {
+          const words = item.textContent.split(" ");
+          item.innerHTML = words.map(word => `<span>${word}</span>`).join(" ");
+        });
+    
+        setTimeout(() => {
+          introItems.forEach(item => {
+            const spans = item.querySelectorAll("span");
+            spans.forEach((span, index) => {
+              setTimeout(() => {
+                span.classList.add("highlighted");
+              }, index * 400); // Adjust delay if needed to match animation timing
+            });
+          });
+        }, 500); // Adjust delay if needed to match animation timing
+      });
+    </script>
+    
+    
+       
+
+    <!-- Author Section -->
     <section class="ftco-about img ftco-section" id="author-section">
       <div class="container">
         <div class="row d-flex no-gutters">
@@ -104,7 +142,7 @@
             <div class="py-md-5">
               <div class="row justify-content-start pb-3">
                 <div class="col-md-12 heading-section ftco-animate">
-                  <span class="subheading">Know More About Me</span>
+                  <span class="subheading">Professional Business Writer</span>
                   <h2 class="mb-4">Roger S. Peterson</h2>
                   <p>
                     Roger S. Peterson is a Professional Certified Marketer
@@ -318,10 +356,8 @@
     </section>
 
     <section
-      class="ftco-about img ftco-section ftco-no-pt ftco-no-pb"
-      id="about-section"
-    >
-      <div class="container">
+      class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+      <div class="container" style="padding-top: 40px;">
         <div class="row d-flex no-gutters">
           <div class="col-md-6 col-lg-6 d-flex">
             <div class="img-about img d-flex align-items-stretch">
@@ -338,7 +374,7 @@
               ></div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-6 pl-md-5">
+          <div class="col-md-6 col-lg-6 pl-md-5" style="font-size:larger;">
             <div class="row justify-content-start pb-3">
               <div class="col-md-12 heading-section ftco-animate">
                 <h2 class="mb-4">About The Book</h2>
@@ -391,77 +427,72 @@
       <div class="container">
         <div class="row no-gutters justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-            <span class="subheading">Projects</span>
-            <h2 class="mb-4">My Other Books</h2>
+            <span class="subheading" style="font-size: x-large;">Projects</span>
+            <h1 class="mb-4"><strong>My Other Books</strong></h1>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3">
-            <div
-              class="project img ftco-animate d-flex justify-content-center align-items-end zoomable"
-              style="background-image: url(images/book_1.jpeg)"
-            >
+          <div class="col-md-4 mb-4">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-end zoomable">
+              <img src="images/book_1.jpeg" class="img-fluid" alt="The Secret to Incentive program Success">
               <div class="overlay"></div>
               <div class="text p-4">
                 <h3>
-                  <a
-                    href="https://www.amazon.com/Secret-Incentive-program-Success-counters-ebook/dp/B00BR0DUEU?ref_=ast_author_dp"
-                    >The Secret to Incentive program Success: Incentive ROI that
-                    makes bean counters smile!</a
-                  >
+                  <a href="https://www.amazon.com/Secret-Incentive-program-Success-counters-ebook/dp/B00BR0DUEU?ref_=ast_author_dp">
+                    The Secret to Incentive program Success: Incentive ROI that makes bean counters smile!
+                  </a>
                 </h3>
                 <span>Sales & Selling</span>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div
-              class="project img ftco-animate d-flex justify-content-center align-items-end zoomable"
-              style="background-image: url(images/book-10.jpg)"
-            >
+          <div class="col-md-4 mb-4">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-end zoomable">
+              <img src="images/book-12.jpg" class="img-fluid" alt="Be Your Own Salmon">
               <div class="overlay"></div>
               <div class="text p-4">
                 <h3>
-                  <a
-                    href="https://www.amazon.com/Handbook-Managing-Business-Marketing-Communications/dp/0844235954?ref_=ast_author_dp"
-                    >Managing Business to Business Marketing Communications</a
-                  >
-                </h3>
-                <span>Business Management</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div
-              class="project img ftco-animate d-flex justify-content-center align-items-end zoomable"
-              style="background-image: url(images/book-11.jpg)"
-            >
-              <div class="overlay"></div>
-              <div class="text p-4">
-                <h3>
-                  <a
-                    href="https://www.amazon.com/Magic-Megaphone-Nick-Montoya/dp/0978630408?ref_=ast_author_dp"
-                    >The Magic Megaphone</a
-                  >
-                </h3>
-                <span>Business Management</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div
-              class="project img ftco-animate d-flex justify-content-center align-items-end zoomable"
-              style="background-image: url(images/book-12.jpg)"
-            >
-              <div class="overlay"></div>
-              <div class="text p-4">
-                <h3>
-                  <a
-                    href="https://www.amazon.com/Be-Your-Own-Salmon-Allegory/dp/1627870601/?_encoding=UTF8&pd_rd_w=IxVvO&content-id=amzn1.sym.cf86ec3a-68a6-43e9-8115-04171136930a&pf_rd_p=cf86ec3a-68a6-43e9-8115-04171136930a&pf_rd_r=136-3118188-8085233&pd_rd_wg=2HpJ6&pd_rd_r=2bf50c7f-0de0-4968-8154-6c1f2a69e9fd&ref_=aufs_ap_sc_dsk"
-                    >Be Your Own Salmon</a
-                  >
+                  <a href="https://www.amazon.com/Be-Your-Own-Salmon-Allegory/dp/1627870601/?_encoding=UTF8&pd_rd_w=IxVvO&content-id=amzn1.sym.cf86ec3a-68a6-43e9-8115-04171136930a&pf_rd_p=cf86ec3a-68a6-43e9-8115-04171136930a&pf_rd_r=136-3118188-8085233&pd_rd_wg=2HpJ6&pd_rd_r=2bf50c7f-0de0-4968-8154-6c1f2a69e9fd&ref_=aufs_ap_sc_dsk">
+                    Be Your Own Salmon
+                  </a>
                 </h3>
                 <span>Self-Growth</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-end zoomable">
+              <img src="images/book-11.jpg" class="img-fluid" alt="The Magic Megaphone">
+              <div class="overlay"></div>
+              <div class="text p-4">
+                <h3>
+                  <a href="https://www.amazon.com/Magic-Megaphone-Nick-Montoya/dp/0978630408?ref_=ast_author_dp">
+                    The Magic Megaphone
+                  </a>
+                </h3>
+                <span>Business Management</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-end zoomable">
+              <img src="images/book-10.jpg" class="img-fluid" alt="Managing Business to Business Marketing Communications">
+              <div class="overlay"></div>
+              <div class="text p-4">
+                <h3>
+                  <a href="https://www.amazon.com/Handbook-Managing-Business-Marketing-Communications/dp/0844235954?ref_=ast_author_dp">Managing Business to Business Marketing Communications
+                  </a>
+                </h3>
+                <span>Business Management</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="project img ftco-animate d-flex justify-content-center align-items-end zoomable unique-photo">
+              <img src="images/working_2.png" class="img-fluid" alt="Roger Peterson signing a book">
+              <div class="overlay"></div>
+              <div class="text p-4">
+                <span>Roger S. Peterson signs autographs at Barnes & Noble</span>
               </div>
             </div>
           </div>
@@ -611,7 +642,7 @@
             class="col-md-12 text-center heading-section heading-section-white ftco-animate"
           >
             <span class="subheading">Testimonial</span>
-            <h2 class="mb-3">Writing Coach for Hire</h2>
+            <h2 class="mb-3">Business Writer for Hire</h2>
           </div>
         </div>
         <div class="row ftco-animate">
@@ -668,7 +699,53 @@
                       ></div>
                       <div class="pl-3">
                         <p class="name">Roger S. Peterson</p>
-                        <span class="position">November 2004</span>
+                        <span class="position">Sacramento Bee, November 2004</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div
+                    class="icon d-flex align-items-center justify-content-center"
+                  >
+                    <span class="fa fa-quote-left"></span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">
+                      I have been a reporter and writer for five trade journals -- I know how editors think. My views on business writing have been featured in both The New York Times and on NBC Nightly News.
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="background-image: url(images/about.png)"
+                      ></div>
+                      <div class="pl-3">
+                        <p class="name">Roger S. Peterson</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div
+                    class="icon d-flex align-items-center justify-content-center"
+                  >
+                    <span class="fa fa-quote-left"></span>
+                  </div>
+                  <div class="text">
+                    <p class="mb-4">
+                      I have worked with many outside consultants and I can place Roger at the top of my list for getting the project complete and done on time. Roger brings the skills and resources necessary to get the job done on time and on budget.
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="background-image: url(images/profile-pic.png)"
+                      ></div>
+                      <div class="pl-3">
+                        <p class="name">Dawn O’Conner Rowe</p>
                       </div>
                     </div>
                   </div>
@@ -680,94 +757,38 @@
       </div>
     </section>
 
-    <section class="ftco-section ftco-no-pt" id="services-section">
+    <section class="ftco-section ftco-no-pt" id="services-section" style="margin-top: 200px; background-color: #f8f9fa;">
       <div class="container">
-        <div class="row justify-content-center py-5 mt-5">
-          <div class="col-md-5 heading-section text-center ftco-animate">
-            <span class="subheading">My Skills</span>
-            <h2 class="mb-4">My Skills</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-10 text-center mb-5 ftco-animate" style="margin-top: 90px;">
+            <span class="subheading"><i>Professional Business Writer and...</i></span>
+            <h2 class="mb-4 skills-section">Ghostwriter</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 text-center d-flex ftco-animate">
-            <div class="services-1 bg-light">
-              <span class="icon">
-                <i class="flaticon-user-experience"></i>
-              </span>
-              <div class="desc">
-                <h3 class="mb-5">Author Trainer</h3>
-                <p>
-                  Roger Peterson, a credentialed California secondary teacher,
-                  taught a class in critical thinking skills to high schoolers
-                  in the Sacramento area. Hire him to conduct an in-service
-                  teacher professional development workshop on how to help
-                  students think critically.
-                </p>
-                <h4 class="mt-4">Topics Covered:</h4>
-                <ul class="topics-covered">
-                  <li>Four district levels of knowing</li>
-                  <li>Fact checking safety line</li>
-                  <li>Speedy word sprawls</li>
-                  <li>
-                    Suffering superlatives: Language and word choice moderation
-                  </li>
-                  <li>Wordy wanderings</li>
-                  <li>Jargon jungles & euphemistic yuks</li>
-                  <li>Biases and hidden agendas</li>
-                  <li>Fallacy foibles</li>
-                  <li>Dumb data</li>
-                  <li>Body botches</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 text-center d-flex ftco-animate">
-            <div class="services-1 bg-light">
-              <span class="icon">
-                <i class="flaticon-network"></i>
-              </span>
-              <div class="desc">
-                <h3 class="mb-5">Editor</h3>
-                <p>
-                  With extensive experience in editing, Roger ensures that every
-                  piece of writing is clear, concise, and impactful. He
-                  specializes in refining your work to convey your message
-                  effectively, helping you avoid common pitfalls and improve
-                  overall quality.
-                </p>
-                <h4 class="mt-4">Editing Services Include:</h4>
-                <ul class="topics-covered">
-                  <li>Grammar and punctuation correction</li>
-                  <li>Structural and content editing</li>
-                  <li>Clarity and conciseness improvements</li>
-                  <li>Consistency and coherence checks</li>
-                  <li>Formatting and style guide adherence</li>
-                  <li>Fact-checking and referencing</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 text-center d-flex ftco-animate">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10 d-flex align-items-stretch ftco-animate">
             <div class="services-1 bg-light">
               <span class="icon">
                 <i class="flaticon-innovation"></i>
               </span>
               <div class="desc">
-                <h3 class="mb-5">Ghostwriter</h3>
                 <p>
-                  Roger's ghostwriting services help you bring your ideas to
-                  life. Whether it's for a book, article, or any other written
-                  content, he works closely with you to capture your voice and
-                  vision, ensuring the final product is polished and compelling.
+                  Roger's ghostwriting services help you bring your ideas to life.
+                Whether it's for a book, article, or any other written content,
+                he works closely with you to capture your voice and vision,
+                ensuring the final product is polished and compelling. With
+                extensive experience in editing, Roger ensures that every piece
+                of writing is clear, concise, and impactful. He specializes in
+                refining your work to convey your message effectively, helping
+                you avoid common pitfalls and improve overall quality.
                 </p>
-                <h4 class="mt-4">Ghostwriting Services Include:</h4>
+                <h4 class="mt-4">Services Include:</h4>
                 <ul class="topics-covered">
-                  <li>Comprehensive content creation</li>
-                  <li>Voice and tone matching</li>
-                  <li>Research and fact-checking</li>
-                  <li>Drafting and revisions</li>
-                  <li>Collaborative brainstorming</li>
-                  <li>Confidentiality assurance</li>
+                  <li class="ftco-animate"><strong>Comprehensive content creation</strong></li>
+                  <li class="ftco-animate"><strong>Voice and tone matching</strong></li>
+                  <li class="ftco-animate"><strong>Drafting and revisions</strong></li>
+                  <li class="ftco-animate"><strong>Collaborative brainstorming</strong></li>
+                  <li class="ftco-animate"><strong>Confidentiality assurance</strong></li>
                 </ul>
               </div>
             </div>
@@ -775,7 +796,7 @@
         </div>
       </div>
     </section>
-
+    
     <section
       class="ftco-section contact-section ftco-no-pb"
       id="contact-section"
@@ -894,62 +915,62 @@
 
         <!-- Uncomment this section to include the form -->
         <!--
-			<div class="row no-gutters block-9">
-				<div class="col-md-6 order-md-last d-flex">
-					<form id="contactForm" class="bg-light p-4 p-md-5 contact-form">
-						<div class="form-group">
-							<input type="text" class="form-control" name="fullName" placeholder="Your Name" required>
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control" name="email" placeholder="Your Email" required>
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" name="subject" placeholder="Subject" required>
-						</div>
-						<div class="form-group">
-							<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
-						</div>
-						<div class="form-group">
-							<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-						</div>
-					</form>
-				</div>
-			</div>
-			-->
+        <div class="row no-gutters block-9">
+          <div class="col-md-6 order-md-last d-flex">
+            <form id="contactForm" class="bg-light p-4 p-md-5 contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control" name="fullName" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          </div>
+        </div>
+        -->
 
         <!-- JavaScript for form submission -->
         <!--
-			<script>
-				document.getElementById("contactForm").addEventListener("submit", function(event){
-					event.preventDefault();
-	
-					var formData = new FormData(this);
-	
-					fetch('send_email.php', {
-						method: 'POST',
-						body: formData
-					})
-					.then(response => response.json())
-					.then(data => {
-						var messageDiv = document.createElement("div");
-						messageDiv.textContent = data.message;
-						if (data.status === "success") {
-							messageDiv.classList.add("text-success");
-						} else {
-							messageDiv.classList.add("text-danger");
-						}
-						document.getElementById("contactForm").appendChild(messageDiv);
-					})
-					.catch(error => {
-						console.error('Error:', error);
-						var errorMessageDiv = document.createElement("div");
-						errorMessageDiv.textContent = 'Oops! Something went wrong. Please try again.';
-						errorMessageDiv.classList.add("text-danger");
-						document.getElementById("contactForm").appendChild(errorMessageDiv);
-					});
-				});
-			</script>
-			-->
+        <script>
+          document.getElementById("contactForm").addEventListener("submit", function(event){
+            event.preventDefault();
+    
+            var formData = new FormData(this);
+    
+            fetch('send_email.php', {
+              method: 'POST',
+              body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+              var messageDiv = document.createElement("div");
+              messageDiv.textContent = data.message;
+              if (data.status === "success") {
+                messageDiv.classList.add("text-success");
+              } else {
+                messageDiv.classList.add("text-danger");
+              }
+              document.getElementById("contactForm").appendChild(messageDiv);
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              var errorMessageDiv = document.createElement("div");
+              errorMessageDiv.textContent = 'Oops! Something went wrong. Please try again.';
+              errorMessageDiv.classList.add("text-danger");
+              document.getElementById("contactForm").appendChild(errorMessageDiv);
+            });
+          });
+        </script>
+        -->
       </div>
     </section>
 
