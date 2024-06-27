@@ -12750,3 +12750,41 @@ textarea.form-control {
   color: #333;
   margin-bottom: 30px;
 }
+
+#critical-thinking-section {
+  margin: 3.5rem 0;
+}
+
+#critical-thinking-section .inner-container {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#critical-thinking-section ul {
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+#critical-thinking-section ul li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+#critical-thinking-section ul li:before {
+  content: "\f00c";
+  /* FontAwesome check icon */
+  font-family: "FontAwesome";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-size: 1.2rem;
+  color: #17b978;
+}

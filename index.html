@@ -31,6 +31,12 @@
 
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <script>
+      window.onload = function () {
+        window.scrollTo(0, 0);
+      }
+    </script>
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -96,32 +102,7 @@
           <div class="col-md-12 col-sm-12 col-12 intro-item">Critical Thinking Trainer</div>
         </div>
       </div>
-    </section> 
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const introItems = document.querySelectorAll(".intro-item");
-    
-        introItems.forEach(item => {
-          const words = item.textContent.split(" ");
-          item.innerHTML = words.map(word => `<span>${word}</span>`).join(" ");
-        });
-    
-        setTimeout(() => {
-          introItems.forEach(item => {
-            const spans = item.querySelectorAll("span");
-            spans.forEach((span, index) => {
-              setTimeout(() => {
-                span.classList.add("highlighted");
-              }, index * 400); // Adjust delay if needed to match animation timing
-            });
-          });
-        }, 500); // Adjust delay if needed to match animation timing
-      });
-    </script>
-    
-    
-       
+    </section>     
 
     <!-- Author Section -->
     <section class="ftco-about img ftco-section" id="author-section">
@@ -145,16 +126,10 @@
                   <span class="subheading">Professional Business Writer</span>
                   <h2 class="mb-4">Roger S. Peterson</h2>
                   <p>
-                    Roger S. Peterson is a Professional Certified Marketer
-                    (PCM™) of the American Marketing Association, one of only
-                    196 persons in America to gain this status. He has over 30
-                    years of experience in sales, product management,
-                    advertising, and high-tech marketing communications (marcom)
-                    management. Unlike most marketers, Peterson had two
-                    successful sales careers and is a widely published business
-                    writer. His career includes roles as a marketing
-                    communications manager at two technology firms and as a
-                    writer for Intel’s IT department.
+                    Roger S. Peterson is a Professional Certified Marketer (PCM™) of the American Marketing Association, 
+                    one of the first marketing professionals to earn this AMA designation. He has more than 30 years of experience in sales, product management, 
+                    advertising, and high-tech marketing communications (marcom) management. Unlike most marketers, Peterson had two successful sales careers and is a widely published business writer. 
+                    His career includes roles as a marketing communications manager at two technology firms and as a writer for Intel’s IT department
                   </p>
                   <br />
                   <h3 class="mb-3">Credentials and Achievements</h3>
@@ -180,13 +155,13 @@
                     </li>
                     <li>
                       <strong
-                        >Interviewed on NBC Nightly News regarding
+                        >Interviewed on <i>NBC Nightly News</i> regarding
                         writing</strong
                       >
                     </li>
                     <li>
                       <strong
-                        >Past columnist for TRADESHOW Week and the Sacramento
+                        >Past columnist for <i>TRADESHOW</i> Week and the Sacramento
                         Business Journal</strong
                       >
                     </li>
@@ -242,60 +217,6 @@
             </div>
           </div>
         </div>
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            const quotes = document.querySelectorAll(".quote");
-            const newBookSection = document.getElementById("newbook-section");
-            const introDiv = document.getElementById("intro-div");
-            let quotesLoaded = false;
-
-            function checkIfInView() {
-              const sectionRect = newBookSection.getBoundingClientRect();
-              const introDivRect = introDiv.getBoundingClientRect();
-              const windowHeight = window.innerHeight;
-
-              // Calculate the center of the viewport
-              const viewportCenter = windowHeight / 2;
-
-              // Calculate the center of the intro-div
-              const introDivCenter =
-                (introDivRect.top + introDivRect.bottom) / 2;
-
-              // Check if the section is fully in view and intro-div is centered
-              if (
-                sectionRect.top <= viewportCenter &&
-                sectionRect.bottom >= viewportCenter &&
-                introDivCenter >= viewportCenter - 100 &&
-                introDivCenter <= viewportCenter + 100
-              ) {
-                if (!quotesLoaded) {
-                  quotesLoaded = true;
-                  document.body.classList.add("stop-scrolling");
-                  quotes.forEach((quote, index) => {
-                    setTimeout(() => {
-                      quote.classList.add("active");
-                      if (index === quotes.length - 1) {
-                        setTimeout(() => {
-                          document.body.classList.remove("stop-scrolling");
-                        }, 500);
-                      }
-                    }, index * 800);
-                  });
-                }
-              }
-            }
-
-            function handleScroll() {
-              // Check if the newbook section is in view
-              checkIfInView();
-            }
-
-            window.addEventListener("scroll", handleScroll);
-            window.addEventListener("resize", handleScroll);
-
-            handleScroll();
-          });
-        </script>
         <!-- Quotes Section -->
         <div class="quotes-section">
           <div class="quote left-quote top-quote">
@@ -585,47 +506,6 @@
         </div>
       </div>
     </section>
-
-    <style>
-      /* Section Styles */
-      #critical-thinking-section {
-        margin: 3.5rem 0;
-      }
-
-      #critical-thinking-section .inner-container {
-        max-width: 1700px;
-        margin: 0 auto;
-        padding: 20px;
-        background: #fff;
-        border-radius: 15px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      }
-
-      #critical-thinking-section ul {
-        padding-left: 0;
-        list-style: none;
-        text-align: left;
-        font-size: 1.1rem;
-        line-height: 2;
-      }
-
-      #critical-thinking-section ul li {
-        position: relative;
-        padding-left: 2rem;
-        margin-bottom: 0.75rem;
-      }
-
-      #critical-thinking-section ul li:before {
-        content: "\f00c";
-        /* FontAwesome check icon */
-        font-family: "FontAwesome";
-        position: absolute;
-        left: 0;
-        top: 5px;
-        font-size: 1.2rem;
-        color: #17b978;
-      }
-    </style>
 
     <section
       class="ftco-section testimony-section ftco-no-pb"
@@ -939,38 +819,7 @@
         -->
 
         <!-- JavaScript for form submission -->
-        <!--
-        <script>
-          document.getElementById("contactForm").addEventListener("submit", function(event){
-            event.preventDefault();
-    
-            var formData = new FormData(this);
-    
-            fetch('send_email.php', {
-              method: 'POST',
-              body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-              var messageDiv = document.createElement("div");
-              messageDiv.textContent = data.message;
-              if (data.status === "success") {
-                messageDiv.classList.add("text-success");
-              } else {
-                messageDiv.classList.add("text-danger");
-              }
-              document.getElementById("contactForm").appendChild(messageDiv);
-            })
-            .catch(error => {
-              console.error('Error:', error);
-              var errorMessageDiv = document.createElement("div");
-              errorMessageDiv.textContent = 'Oops! Something went wrong. Please try again.';
-              errorMessageDiv.classList.add("text-danger");
-              document.getElementById("contactForm").appendChild(errorMessageDiv);
-            });
-          });
-        </script>
-        -->
+        <!---->
       </div>
     </section>
 
@@ -1098,6 +947,8 @@
     <script src="js/scrollax.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
+    <script src="js/intro-highlighter.js"></script>
+    <script src="js/quotes-animation.js"></script>
 
     <script src="js/main.js"></script>
   </body>
