@@ -12436,7 +12436,7 @@ textarea.form-control {
   }
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"); */
 
 .stop-scrolling {
   overflow: hidden;
@@ -12463,12 +12463,13 @@ textarea.form-control {
   text-align: center;
   font-size: 18px;
   color: #555;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Times New Roman', Times, serif !important;
   pointer-events: auto;
   margin: 10px;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
+  font-style: italic;
 }
 
 .left-quote {
@@ -12492,8 +12493,8 @@ textarea.form-control {
 .author {
   display: block;
   margin-top: 10px;
-  font-size: 14px;
-  font-style: italic;
+  font-size: 16px;
+  font-style: normal;
   color: #333;
 }
 @media (max-width: 768px) {
