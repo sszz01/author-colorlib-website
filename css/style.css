@@ -12525,6 +12525,7 @@ textarea.form-control {
     bottom: 10%;
   }
 }
+
 .quote.active {
   opacity: 1;
   transform: translateY(0);
@@ -12787,4 +12788,22 @@ textarea.form-control {
   top: 5px;
   font-size: 1.2rem;
   color: #17b978;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 103, 0, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 103, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 103, 0, 0);
+  }
+}
+
+.questions .highlighted {
+  animation: pulse 2s infinite;
+  background-color: #f7f7f7;
+  color: #ff6700;
 }
