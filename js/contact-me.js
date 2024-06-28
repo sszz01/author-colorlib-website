@@ -13,6 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
       currentIndex = (currentIndex + 1) % questions.length;
     }
   
-    setInterval(highlightNextQuestion, 5000);
+    setInterval(highlightNextQuestion, 4000);
   });
   

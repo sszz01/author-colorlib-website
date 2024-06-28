@@ -4437,6 +4437,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.5rem 1rem;
 }
+
 .nav-link:hover,
 .nav-link:focus {
   text-decoration: none;
@@ -11260,7 +11261,6 @@ h5,
   width: 100%;
 }
 .ftco-about ul.about-info li {
-  list-style: none;
   margin-bottom: 10px;
 }
 .ftco-about ul.about-info li span {
@@ -12782,7 +12782,6 @@ textarea.form-control {
 
 #critical-thinking-section ul li:before {
   content: "\f00c";
-  /* FontAwesome check icon */
   font-family: "FontAwesome";
   position: absolute;
   left: 0;
@@ -12807,4 +12806,43 @@ textarea.form-control {
   animation: pulse 2s infinite;
   background-color: #f7f7f7;
   color: #ff6700;
+}
+
+.nav-item {
+  font-size: 18px;
+}
+
+.questions {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-info li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.about-info li h5 {
+  font-size: 22px;
+  color: #333;
+}
+
+.about-info li h5 i {
+  font-style: italic;
+  color: #555;
+}
+
+.about-info li::before {
+  content: "•";
+  font-size: 30px;
+  margin-right: 10px;
 }
