@@ -11773,7 +11773,6 @@ textarea.form-control {
   top: 8px;
 }
 
-/* Typography and Headers */
 .subheading {
   display: block;
   font-size: 20px;
@@ -12364,13 +12363,12 @@ textarea.form-control {
   position: relative;
   overflow: hidden;
   height: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #D6CC99;
 }
 
 #author-section .img-about .img {
-  background-size: cover;
-  background-position: center center;
+  background-position: center;
   height: 100%;
   width: 100%;
   max-width: 100%;
@@ -12398,31 +12396,40 @@ textarea.form-control {
   margin-bottom: 30px;
 }
 
-#author-section ul.credentials-list {
+#credentials-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+#credentials-section .credentials-list {
   list-style-type: none;
   padding-left: 0;
-  margin-top: 30px;
 }
 
-#author-section ul.credentials-list li {
-  margin-bottom: 15px;
-  padding: 15px;
-  background-color: #fff;
-  border-left: 6px solid #17b978;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+#credentials-section .credentials-list li {
+  margin-bottom: 30px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-left: 8px solid #17b978;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
 }
 
-#author-section ul.credentials-list li strong {
-  font-size: 18px;
-  color: #333;
+#credentials-section .credentials-list li strong {
+  font-size: 20px;
+  color: #333333;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-#author-section ul.credentials-list li span {
-  font-size: 16px;
-  color: #666;
+#credentials-section .credentials-list li i {
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  #credentials-section .credentials-list li {
+    padding: 20px;
+  }
 }
 
 /* Responsive adjustments */
@@ -12452,6 +12459,7 @@ textarea.form-control {
   justify-content: space-between;
   align-items: center;
   pointer-events: none;
+  flex-wrap: wrap;
 }
 
 .quote {
@@ -12483,11 +12491,17 @@ textarea.form-control {
 }
 
 .top-quote {
-  top: 25%;
+  top: 20%;
 }
 
 .bottom-quote {
-  bottom: 25%;
+  bottom: 15%;
+}
+
+.center-quote {
+  position: absolute;
+  left: 34.5%;
+  top: 5%;
 }
 
 .author {
@@ -12497,18 +12511,35 @@ textarea.form-control {
   font-style: normal;
   color: #333;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 767px) {
+  .quotes-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .quote {
-    width: 40%;
-    font-size: 16px;
+    width: 80%;
+    font-size: 16px; 
   }
 
   .top-quote {
-    top: 15%;
+    top: 15%; 
   }
 
   .bottom-quote {
-    bottom: 15%;
+    bottom: 10%;
+  }
+
+  .center-quote {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -12519,17 +12550,36 @@ textarea.form-control {
   }
 
   .top-quote {
-    top: 10%;
+    top: 30%;
   }
 
   .bottom-quote {
     bottom: 10%;
+  }
+
+  .center-quote {
+    top: 10%;
   }
 }
 
 .quote.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+.hero-wrap:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/businessman.jpg);
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.1;
+  transition: opacity 1.5s ease;
+  z-index: -1;
 }
 
 .skills-section h2 {
@@ -12694,7 +12744,6 @@ textarea.form-control {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Section Styles */
 #services-section {
   margin: 3.5rem 0;
 }
@@ -12845,4 +12894,8 @@ textarea.form-control {
   content: "•";
   font-size: 30px;
   margin-right: 10px;
+}
+
+#ftco-nav .nav-link {
+  color: #F8F4E1;
 }
