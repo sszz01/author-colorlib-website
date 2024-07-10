@@ -12574,7 +12574,7 @@ textarea.form-control {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/images/businessman.jpg);
+  background-image: url(../images/businessman.jpg);
   background-size: cover;
   background-position: center center;
   opacity: 0.1;
@@ -12899,3 +12899,10 @@ textarea.form-control {
 #ftco-nav .nav-link {
   color: #F8F4E1;
 }
+
+.navbar .navbar-brand {
+  color: #dee2e6;
+  font-size: 24px;
+}
+
+
