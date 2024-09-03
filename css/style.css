@@ -12563,6 +12563,37 @@ textarea.form-control {
   }
 }
 
+/* Reduce the size of quotes on PC screens between 1366x800 and 1920x1080 */
+@media (max-width: 1920px) and (min-width: 1366px) {
+  .quote {
+    width: 25%; /* Reduce width */
+    font-size: 14px; /* Reduce font size */
+    padding: 8px; /* Adjust padding */
+    margin: 8px; /* Adjust margin */
+  }
+}
+
+/* Hide quotes on tablet and phone screens */
+@media (max-width: 1366px) {
+  .quotes-section {
+    display: none;
+  }
+}
+
+/* Dynamic adjustments for screens between 1024px and 1366px */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .quote {
+    width: 40%; /* Shrink the quotes */
+    font-size: 16px;
+    padding: 8px;
+    margin: 8px;
+  }
+
+  .quotes-section {
+    padding: 15px; /* Add more spacing between quotes */
+  }
+}
+
 .quote.active {
   opacity: 1;
   transform: translateY(0);
@@ -12933,5 +12964,179 @@ textarea.form-control {
   opacity: 1;
   animation: typing 4s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
 }
+
+.zoom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.zoomed-img {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  animation: zoomIn 0.6s ease;
+  max-height: 80vh;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.5); }
+  to { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+  .zoomed-img {
+    width: 90%;
+    max-width: none;
+    max-height: 70vh;
+  }
+
+  .close {
+    font-size: 30px;
+    top: 10px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .zoomed-img {
+    width: 95%;
+    max-width: none;
+    max-height: 60vh;
+  }
+
+  .close {
+    font-size: 25px;
+    top: 5px;
+    right: 10px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 767.98px) {
+  .ftco-section {
+    padding: 3em 0; /* Reduce padding on mobile */
+  }
+
+  #author-section .handwriting-text {
+    font-size: 20px;
+    width: 100%; /* Adjust the typing animation for smaller screens */
+  }
+
+  .img-about {
+    margin-bottom: 1em; /* Add space below the image */
+  }
+
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .pl-md-5 {
+    padding-left: 0;
+  }
+
+  #author-section .py-md-5 {
+    padding: 2em 1em; /* Add padding to prevent overlap */
+  }
+
+  #author-section .heading-section {
+    margin-bottom: 1em; /* Reduce margin below the heading section */
+  }
+
+  #author-section p {
+    font-size: 18px; /* Adjust text size for better readability */
+    line-height: 1.5; /* Increase line height for better spacing */
+  }
+
+  /* Specific fix for overlapping text on mobile */
+  .ftco-about {
+    text-align: center; /* Center text on mobile */
+  }
+
+  .ftco-about .row {
+    display: block; /* Stack rows on top of each other */
+  }
+
+  .ftco-about .col-md-6 {
+    margin-bottom: 2em; /* Ensure there's space below the image */
+    padding: 0; /* Remove padding to prevent overlap */
+  }
+
+  .ftco-about .img-about {
+    margin-bottom: 2em; /* Add margin below the image */
+  }
+
+  .ftco-about .desc {
+    padding: 1em; /* Add padding around text */
+  }
+}
+
+/* Ensure the container fits the image size */
+.custom-container-1,
+.custom-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Let the height adjust based on image size */
+  width: auto;  /* Let the width adjust based on image size */
+}
+
+.custom-container-1 .project,
+.custom-container-2 .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.custom-container-1 img,
+.custom-container-2 img {
+  height: 45vh !important;
+  width: auto !important;
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+  .newbook-img {
+    height: 93vh !important;
+    margin-top: 40px;
+  }
+
+.custom-container-1 img,
+.custom-container-2 img {
+  height: 55vh !important;
+  width: auto !important;
+}
+}
+
+
+
+
 
 
