@@ -39,8 +39,19 @@ document.addEventListener("DOMContentLoaded", function () {
     checkIfInView();
   }
 
-  window.addEventListener("scroll", handleScroll);
-  window.addEventListener("resize", handleScroll);
+  // Check screen size and prevent quotes from activating on tablets and phones
+  function init() {
+    if (window.innerWidth >= 1024) {
+      window.addEventListener("scroll", handleScroll);
+      window.addEventListener("resize", handleScroll);
+      handleScroll();
+    } else {
+      // Make sure quotes are inactive if screen size is below 1024px
+      quotes.forEach(quote => {
+        quote.classList.remove("active");
+      });
+    }
+  }
 
-  handleScroll();
+  init(); // Run the init function on DOM content loaded
 });
