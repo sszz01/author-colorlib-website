@@ -12446,9 +12446,9 @@ textarea.form-control {
 
 /* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"); */
 
-.stop-scrolling {
+/* .stop-scrolling {
   overflow: hidden;
-}
+} */
 
 .quotes-section {
   position: absolute;
@@ -12541,25 +12541,6 @@ textarea.form-control {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .quote {
-    width: 80%;
-    font-size: 14px;
-  }
-
-  .top-quote {
-    top: 30%;
-  }
-
-  .bottom-quote {
-    bottom: 10%;
-  }
-
-  .center-quote {
-    top: 10%;
   }
 }
 
@@ -13135,8 +13116,69 @@ textarea.form-control {
 }
 }
 
+.quotes-section-modern {
+  position: relative;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Initial gradient */
+  background-size: 200% 200%;
+  transition: background 0.5s ease; /* Smooth transition for color change */
+  overflow: hidden; /* Ensure background elements stay within bounds */
+}
 
+.quotes-section-modern .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
+.quotes-section-modern .quote {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  /* Modern and high-contrast shadow effect */
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px, 
+              rgba(0, 0, 0, 0.15) 4px 4px, 
+              rgba(0, 0, 0, 0.1) 6px 6px, 
+              rgba(0, 0, 0, 0.05) 8px 8px;
+  font-size: 20px;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif !important;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              opacity 0.8s ease-out,
+              box-shadow 0.8s ease-out; /* Smooth transition for shadow effect */
+}
 
+/* Adjust animation for quotes on odd and even children */
+.quotes-section-modern .quote:nth-child(even) {
+  transform: translateX(100%);
+}
 
+.quotes-section-modern .quote.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 
+.quotes-section-modern .quote:hover {
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.3) 4px 4px, 
+              rgba(0, 0, 0, 0.2) 8px 8px, 
+              rgba(0, 0, 0, 0.1) 12px 12px, 
+              rgba(0, 0, 0, 0.05) 16px 16px;
+}
+
+@media (max-width: 767px) {
+  .quotes-section-modern .quote {
+    padding: 15px 20px;
+    font-size: 18px;
+  }
+}
