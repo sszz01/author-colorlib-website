@@ -13018,19 +13018,19 @@ textarea.form-control {
   }
 }
 
-/* Mobile Styles */
+
 @media (max-width: 767.98px) {
   .ftco-section {
-    padding: 3em 0; /* Reduce padding on mobile */
+    padding: 3em 0;
   }
 
   #author-section .handwriting-text {
     font-size: 20px;
-    width: 100%; /* Adjust the typing animation for smaller screens */
+    width: 100%;
   }
 
   .img-about {
-    margin-bottom: 1em; /* Add space below the image */
+    margin-bottom: 1em;
   }
 
   .col-md-6 {
@@ -13043,49 +13043,48 @@ textarea.form-control {
   }
 
   #author-section .py-md-5 {
-    padding: 2em 1em; /* Add padding to prevent overlap */
+    padding: 2em 1em;
   }
 
   #author-section .heading-section {
-    margin-bottom: 1em; /* Reduce margin below the heading section */
+    margin-bottom: 1em;
   }
 
   #author-section p {
-    font-size: 18px; /* Adjust text size for better readability */
-    line-height: 1.5; /* Increase line height for better spacing */
+    font-size: 18px;
+    line-height: 1.5;
   }
 
-  /* Specific fix for overlapping text on mobile */
+
   .ftco-about {
-    text-align: center; /* Center text on mobile */
+    text-align: center;
   }
 
   .ftco-about .row {
-    display: block; /* Stack rows on top of each other */
+    display: block;
   }
 
   .ftco-about .col-md-6 {
-    margin-bottom: 2em; /* Ensure there's space below the image */
-    padding: 0; /* Remove padding to prevent overlap */
+    margin-bottom: 2em;
+    padding: 0;
   }
 
   .ftco-about .img-about {
-    margin-bottom: 2em; /* Add margin below the image */
+    margin-bottom: 2em;
   }
 
   .ftco-about .desc {
-    padding: 1em; /* Add padding around text */
+    padding: 1em;
   }
 }
 
-/* Ensure the container fits the image size */
 .custom-container-1,
 .custom-container-2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto; /* Let the height adjust based on image size */
-  width: auto;  /* Let the width adjust based on image size */
+  height: auto;
+  width: auto;
 }
 
 .custom-container-1 .project,
@@ -13119,10 +13118,10 @@ textarea.form-control {
 .quotes-section-modern {
   position: relative;
   padding: 100px 20px;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* Initial gradient */
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
   background-size: 200% 200%;
-  transition: background 0.5s ease; /* Smooth transition for color change */
-  overflow: hidden; /* Ensure background elements stay within bounds */
+  transition: background 0.5s ease;
+  overflow: hidden;
 }
 
 .quotes-section-modern .container {
@@ -13139,7 +13138,6 @@ textarea.form-control {
   border-radius: 10px;
   padding: 20px 30px;
   margin-bottom: 20px;
-  /* Modern and high-contrast shadow effect */
   box-shadow: rgba(0, 0, 0, 0.2) 2px 2px, 
               rgba(0, 0, 0, 0.15) 4px 4px, 
               rgba(0, 0, 0, 0.1) 6px 6px, 
@@ -13155,10 +13153,9 @@ textarea.form-control {
   transform: translateX(-100%);
   transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
               opacity 0.8s ease-out,
-              box-shadow 0.8s ease-out; /* Smooth transition for shadow effect */
+              box-shadow 0.8s ease-out;
 }
 
-/* Adjust animation for quotes on odd and even children */
 .quotes-section-modern .quote:nth-child(even) {
   transform: translateX(100%);
 }
@@ -13168,7 +13165,7 @@ textarea.form-control {
   transform: translateX(0);
 }
 
-.quotes-section-modern .quote:hover {
+.quotes-section-modern .quote.lift {
   transform: translateY(-5px);
   box-shadow: rgba(0, 0, 0, 0.3) 4px 4px, 
               rgba(0, 0, 0, 0.2) 8px 8px, 

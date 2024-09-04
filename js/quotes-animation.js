@@ -14,3 +14,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", handleScroll);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const quotes = document.querySelectorAll('.quotes-section-modern .quote');
+    let currentIndex = 0;
+
+    function liftQuote() {
+        quotes.forEach(quote => quote.classList.remove('lift'));
+        quotes[currentIndex].classList.add('lift');
+
+        currentIndex = (currentIndex + 1) % quotes.length;
+
+        setTimeout(liftQuote, 5000);
+    }
+
+    liftQuote();
+    
+    });
