@@ -12587,7 +12587,7 @@ textarea.form-control {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../images/businessman.jpg);
+  background-image: url(/images/latest_book.png);
   background-size: cover;
   background-position: center center;
   opacity: 0.1;
@@ -12605,10 +12605,11 @@ textarea.form-control {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(135deg, #333333, #ff6600);
   padding: 50px 20px;
   animation: changeBackground 10s ease infinite alternate;
+  box-sizing: border-box;
 }
 
 @keyframes changeBackground {
@@ -12650,7 +12651,7 @@ textarea.form-control {
   transform: scaleX(1);
 }
 
-/* Responsive Design */
+/* Responsive Design for PC Screens */
 @media (max-width: 1200px) {
   .intro-item {
     font-size: 2.5em;
@@ -12676,6 +12677,19 @@ textarea.form-control {
   .intro-item {
     font-size: 1.2em;
     margin: 15px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro-section {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro-section {
+    padding-top: 120px;
+    min-height: 90vh;
   }
 }
 
@@ -13098,7 +13112,7 @@ textarea.form-control {
 
 .custom-container-1 img,
 .custom-container-2 img {
-  height: 45vh !important;
+  height: 35vh !important;
   width: auto !important;
 }
 
