@@ -12580,19 +12580,14 @@ textarea.form-control {
   transform: translateY(0);
 }
 
-.hero-wrap:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/latest_book.png);
-  background-size: cover;
-  background-position: center center;
-  opacity: 0.1;
-  transition: opacity 1.5s ease;
-  z-index: -1;
+.hero-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0 5%;
 }
 
 .skills-section h2 {
@@ -13190,6 +13185,119 @@ textarea.form-control {
 @media (max-width: 767px) {
   .quotes-section-modern .quote {
     padding: 15px 20px;
+    font-size: 18px;
+  }
+}
+
+.book-cover {
+  width: 100%;
+  max-width: 400px; /* Set a maximum width that fits the section */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-cover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.intro-div {
+  margin: 0;
+  padding: 5% 5%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 90%;
+}
+
+.intro-div .subheading {
+  font-size: 28px;
+  color: #17b978;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.intro-div .intro {
+  font-size: 48px;
+  color: #222;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.intro-div p.intro {
+  font-size: 22px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.intro-div a.btn-primary {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  background-color: #17b978;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.intro-div a.btn-primary:hover {
+  background-color: #0d8c61;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure the book cover always stays within the section and fully visible */
+@media (max-width: 768px) {
+  .hero-wrap {
+    flex-direction: column; /* Stack image and text vertically */
+  }
+
+  .book-cover {
+    max-width: 100%; /* Ensure it doesn’t overflow */
+    margin-bottom: 20px;
+  }
+
+  .intro-div {
+    padding: 6% 8%;
+    text-align: center;
+  }
+
+  .intro-div .subheading {
+    font-size: 24px;
+  }
+
+  .intro-div .intro {
+    font-size: 40px;
+  }
+
+  .intro-div p.intro {
+    font-size: 20px;
+  }
+}
+
+/* For smaller phones */
+@media (max-width: 480px) {
+  .book-cover {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .intro-div .subheading {
+    font-size: 20px;
+  }
+
+  .intro-div .intro {
+    font-size: 32px;
+  }
+
+  .intro-div p.intro {
     font-size: 18px;
   }
 }
