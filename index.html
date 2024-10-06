@@ -31,23 +31,6 @@
 
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <script>
-      window.onload = function () {
-        window.scrollTo(0, 0);
-      }
-
-      window.addEventListener('popstate', function() {
-        window.scrollTo(0, 0);
-      });
-
-      if (performance.navigation.type === 1) {
-        window.location.href = 'index.html';
-      } 
-      else {
-          sessionStorage.setItem('visited', 'true');
-      }
-    </script>
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -649,8 +632,8 @@
                 </div>
               </a>
               <div>
-                <h3 class="mb-4">Location</h3>
-                <p>Rocklin, CA</p>
+                <h3 class="mb-4" style="font-size: 16pt;">Location</h3>
+                <p style="font-size: 14pt;">Rocklin, CA</p>
               </div>
             </div>
           </div>
@@ -662,8 +645,8 @@
                 </div>
               </a>
               <div>
-                <h3 class="mb-4">Email</h3>
-                <p>peterson@<br />sacramentowriters.com</p>
+                <h3 class="mb-4" style="font-size: 16pt;">Email</h3>
+                <p style="font-size: 14pt;">peterson@<br />sacramentowriters.com</p>
               </div>
             </div>
           </div>
@@ -675,8 +658,8 @@
                 </div>
               </a>
               <div>
-                <h3 class="mb-4">Phone</h3>
-                <p>+ 1 916-709-2530</p>
+                <h3 class="mb-4" style="font-size: 16pt;">Phone</h3>
+                <p style="font-size: 14pt;">+ 1 916-709-2530</p>
               </div>
             </div>
           </div>
