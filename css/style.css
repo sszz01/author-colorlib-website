@@ -13129,6 +13129,16 @@ textarea.form-control {
   }
 }
 
+@media (min-width: 768px) {
+  .custom-container-1 img,
+  .custom-container-2 img {
+    max-height: 370px !important;
+    max-width: 370px !important;
+    height: auto !important;
+    width: auto !important;
+  }
+}
+
 .quotes-section-modern {
   position: relative;
   padding: 100px 20px;
