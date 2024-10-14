@@ -11232,9 +11232,9 @@ h5,
 
 #about-section {
   background-color: #f8f9fa;
-  margin-top: 80px; /* Adjusted margin for top */
-  margin-bottom: 80px; /* Adjusted margin for bottom */
-  min-height: 850px; /* Minimum height for the container */
+  margin-top: 80px;
+  margin-bottom: 80px;
+  min-height: 850px;
 }
 
 .ftco-about .img-about {
@@ -11688,7 +11688,7 @@ textarea.form-control {
 .ftco-section {
   padding: 7em 0;
   position: relative;
-  text-align: center; /* Center align content */
+  text-align: center;
 }
 
 @media (max-width: 767.98px) {
@@ -11701,7 +11701,6 @@ textarea.form-control {
   padding-top: 0 !important;
 }
 
-/* Services Card */
 .services-1 {
   background: #ffffff;
   border-radius: 10px;
@@ -11748,7 +11747,6 @@ textarea.form-control {
   margin-bottom: 20px;
 }
 
-/* List Styling */
 .topics-covered {
   padding-left: 0;
   list-style: none;
@@ -11787,7 +11785,6 @@ textarea.form-control {
   margin-bottom: 50px;
 }
 
-/* Container */
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -12364,7 +12361,7 @@ textarea.form-control {
   overflow: hidden;
   height: 70%;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px #D6CC99;
+  box-shadow: 5px 5px 5px #d6cc99;
   top: 80px;
 }
 
@@ -12413,7 +12410,7 @@ textarea.form-control {
   background-color: #ffffff;
   border-left: 8px solid #17b978;
   border-radius: 8px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 #credentials-section .credentials-list li strong {
@@ -12472,7 +12469,7 @@ textarea.form-control {
   text-align: center;
   font-size: 18px;
   color: #555;
-  font-family: 'Times New Roman', Times, serif !important;
+  font-family: "Times New Roman", Times, serif !important;
   pointer-events: auto;
   margin: 10px;
   opacity: 0;
@@ -12522,11 +12519,11 @@ textarea.form-control {
 
   .quote {
     width: 80%;
-    font-size: 16px; 
+    font-size: 16px;
   }
 
   .top-quote {
-    top: 15%; 
+    top: 15%;
   }
 
   .bottom-quote {
@@ -12544,34 +12541,31 @@ textarea.form-control {
   }
 }
 
-/* Reduce the size of quotes on PC screens between 1366x800 and 1920x1080 */
 @media (max-width: 1920px) and (min-width: 1366px) {
   .quote {
-    width: 25%; /* Reduce width */
-    font-size: 14px; /* Reduce font size */
-    padding: 8px; /* Adjust padding */
-    margin: 8px; /* Adjust margin */
+    width: 25%;
+    font-size: 14px;
+    padding: 8px;
+    margin: 8px;
   }
 }
 
-/* Hide quotes on tablet and phone screens */
 @media (max-width: 1366px) {
   .quotes-section {
     display: none;
   }
 }
 
-/* Dynamic adjustments for screens between 1024px and 1366px */
 @media (min-width: 1024px) and (max-width: 1366px) {
   .quote {
-    width: 40%; /* Shrink the quotes */
+    width: 40%;
     font-size: 16px;
     padding: 8px;
     margin: 8px;
   }
 
   .quotes-section {
-    padding: 15px; /* Add more spacing between quotes */
+    padding: 15px;
   }
 }
 
@@ -12646,7 +12640,6 @@ textarea.form-control {
   transform: scaleX(1);
 }
 
-/* Responsive Design for PC Screens */
 @media (max-width: 1200px) {
   .intro-item {
     font-size: 2.5em;
@@ -12919,7 +12912,7 @@ textarea.form-control {
 }
 
 #ftco-nav .nav-link {
-  color: #F8F4E1;
+  color: #f8f4e1;
 }
 
 .navbar .navbar-brand {
@@ -12941,18 +12934,28 @@ textarea.form-control {
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: #2c3e50; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #2c3e50;
+  }
 }
 
 #author-section .handwriting-text.show {
   opacity: 1;
-  animation: typing 4s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+  animation: typing 4s steps(30, end) forwards,
+    blink-caret 0.75s step-end infinite;
 }
 
 .zoom-modal {
@@ -12995,8 +12998,12 @@ textarea.form-control {
 }
 
 @keyframes zoomIn {
-  from { transform: scale(0.5); }
-  to { transform: scale(1); }
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 768px) {
@@ -13026,7 +13033,6 @@ textarea.form-control {
     right: 10px;
   }
 }
-
 
 @media (max-width: 767.98px) {
   .ftco-section {
@@ -13063,7 +13069,6 @@ textarea.form-control {
     font-size: 18px;
     line-height: 1.5;
   }
-
 
   .ftco-about {
     text-align: center;
@@ -13117,11 +13122,11 @@ textarea.form-control {
     margin-top: 40px;
   }
 
-.custom-container-1 img,
-.custom-container-2 img {
-  height: 55vh !important;
-  width: auto !important;
-}
+  .custom-container-1 img,
+  .custom-container-2 img {
+    height: 55vh !important;
+    width: auto !important;
+  }
 }
 
 .quotes-section-modern {
@@ -13147,22 +13152,19 @@ textarea.form-control {
   border-radius: 10px;
   padding: 20px 30px;
   margin-bottom: 20px;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px, 
-              rgba(0, 0, 0, 0.15) 4px 4px, 
-              rgba(0, 0, 0, 0.1) 6px 6px, 
-              rgba(0, 0, 0, 0.05) 8px 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px, rgba(0, 0, 0, 0.15) 4px 4px,
+    rgba(0, 0, 0, 0.1) 6px 6px, rgba(0, 0, 0, 0.05) 8px 8px;
   font-size: 20px;
   color: #333;
-  font-family: 'Times New Roman', Times, serif !important;
+  font-family: "Times New Roman", Times, serif !important;
   position: relative;
   overflow: hidden;
   width: 100%;
   max-width: 100%;
   opacity: 0;
   transform: translateX(-100%);
-  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              opacity 0.8s ease-out,
-              box-shadow 0.8s ease-out;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    opacity 0.8s ease-out, box-shadow 0.8s ease-out;
 }
 
 .quotes-section-modern .quote:nth-child(even) {
@@ -13176,10 +13178,8 @@ textarea.form-control {
 
 .quotes-section-modern .quote.lift {
   transform: translateY(-5px);
-  box-shadow: rgba(0, 0, 0, 0.3) 4px 4px, 
-              rgba(0, 0, 0, 0.2) 8px 8px, 
-              rgba(0, 0, 0, 0.1) 12px 12px, 
-              rgba(0, 0, 0, 0.05) 16px 16px;
+  box-shadow: rgba(0, 0, 0, 0.3) 4px 4px, rgba(0, 0, 0, 0.2) 8px 8px,
+    rgba(0, 0, 0, 0.1) 12px 12px, rgba(0, 0, 0, 0.05) 16px 16px;
 }
 
 @media (max-width: 767px) {
@@ -13191,8 +13191,8 @@ textarea.form-control {
 
 .book-cover {
   width: 100%;
-  max-width: 400px; /* Set a maximum width that fits the section */
-  height: auto; /* Maintain the aspect ratio */
+  max-width: 400px;
+  height: auto;
   border-radius: 15px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -13253,14 +13253,13 @@ textarea.form-control {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Ensure the book cover always stays within the section and fully visible */
 @media (max-width: 768px) {
   .hero-wrap {
-    flex-direction: column; /* Stack image and text vertically */
+    flex-direction: column;
   }
 
   .book-cover {
-    max-width: 100%; /* Ensure it doesn’t overflow */
+    max-width: 100%;
     margin-bottom: 20px;
   }
 
@@ -13282,7 +13281,6 @@ textarea.form-control {
   }
 }
 
-/* For smaller phones */
 @media (max-width: 480px) {
   .book-cover {
     max-width: 100%;
